@@ -37,15 +37,18 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+    - Aspect Tested: This tested answering quality. My system answered with an example based answer for OOO. The original message asked it to be generated like a "complete beginner" and I think it did that at a abse level very well.
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: This tested system UX. I originally just pasted in the "Read the following paragraph and provide a concise summary of the key points" string. It responded saying yes, but please do provide the paragraph. This was good, because I forgot to paste a pararaph. Then, I pasted a paragraph from Yahoo finance and it outputed as expected.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: Here I vibe checked the imagination and fictional side of the AI chat bot. It generated a story that was not already out there (that I'm aware of), and was extremly fictional and fantasy based. Also vibe checked speed and direction following capabilities.
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested: I vibe checked the UI here. My chat-bot provided me an answer with markdown syntax and syntax of a mathematical formula: \[
+4a = 12 \implies a = \frac{12}{4} = 3
+\]
+    However, the markdown syntax was not rendered on the client UI and the mathematical syntax it was using also did not render. It all jsut showed up as strings. It did not pass this vibe check.
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: I vibe checked previous context with this prompt. It did not pass the vibe check. I asked it to rewrite professionally the short 100-150 word fictional story it wrote just before this, and it had 0 context of prior messages.
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -59,6 +62,7 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 
 What are some limitations of vibe checking as an evaluation tool?
 ##### ✅ Answer:
+I think some limitations are personal limitations. How I "vibe check" something is going to be different than how anyone else "vibe checks" something. Additionally, vibe checking could overlook edge cases just becausd they were not raised during any of the testing/trial of the vibe check and by that person. Lastly, I feel like vibe checking could lack official and extensive testing. For instance, testing all known edge cases of a feature usign pre-writte tests when a feature is launched is, in my opinion, more detailed every single time than a vibe check.
 
 ### 🚧 Advanced Build (OPTIONAL):
 
