@@ -1,0 +1,12 @@
+Starting joke graph application...
+[10/27/25 19:19:17] INFO     Processing request of type ListToolsRequest                       server.py:674
+Tools: [StructuredTool(name='web_search', description='Search the web for information about the given query', args_schema={'properties': {'query': {'title': 'Query', 'type': 'string'}}, 'required': ['query'], 'title': 'web_searchArguments', 'type': 'object'}, response_format='content_and_artifact', coroutine=<function convert_mcp_tool_to_langchain_tool.<locals>.call_tool at 0x10e1f8720>), StructuredTool(name='roll_dice', description='Roll the dice with the given notation', args_schema={'properties': {'notation': {'title': 'Notation', 'type': 'string'}, 'num_rolls': {'default': 1, 'title': 'Num Rolls', 'type': 'integer'}}, 'required': ['notation'], 'title': 'roll_diceArguments', 'type': 'object'}, response_format='content_and_artifact', coroutine=<function convert_mcp_tool_to_langchain_tool.<locals>.call_tool at 0x10e205bc0>), StructuredTool(name='get_joke', description='Get a joke of the given type. Available types: programming, misc, pun, spooky, christmas', args_schema={'properties': {'joke_type': {'default': 'programming', 'title': 'Joke Type', 'type': 'string'}}, 'title': 'get_jokeArguments', 'type': 'object'}, response_format='content_and_artifact', coroutine=<function convert_mcp_tool_to_langchain_tool.<locals>.call_tool at 0x10e205d20>)]
+Graph compiled successfully
+--------------------------------
+Ask me a q, get a funny answer ('q' to end): What is the capital of California?
+
+
+Oopsie daisy! Looks like my attempt to fetch a Christmas joke failed, just like my last attempt at assembling a gingerbread house that ended up looking more like an earthquake hit it! 
+
+Anyway, back to business - the capital of California is Sacramento. If you ever visit, make sure not to mistake the politicians for the cast of a reality show. Sometimes the drama is just as intense! 🍿😄
+Ask me a q, get a funny answer ('q' to end): q
