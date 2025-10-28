@@ -39,7 +39,13 @@ Run the repository and complete the following:
 Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
 
 ##### ✅ Answer:
-_(enter answer here)_
+> Where does the helpfulness evaluator fit in the graph
+
+The helpfulness node is reached from the agent node, when the last AI message has no tool_calls. 
+
+> and under what condition should execution route back to the agent vs. terminate?
+
+It routes back to the agent when the last message does not contain "HELPFULNESS:Y" and there is no "HELPFULNESS:END" marker. Thi is when the evaluator wasn’t confident it was helpful. It terminates when the last message is "HELPFULNESS:END"/the loop limit or it contains "HELPFULNESS:Y".
 
 #### 🏗️ Activity #1 Debugging A Graph
 
@@ -50,7 +56,9 @@ Select the `agent_with_helpfulness` and set one or more interrupts (at least one
 What are your thoughts on when you would use a Before interrupt vs. an After interrupt?
 
 ##### ✅ Answer:
-_(enter answer here)_
+Use a Before interrupt to pause just before a node executes so you can inspect/modify its incoming state or inputs (e.g., adjust the agent prompt or tool arguments) and influence routing. Use an After interrupt to pause right after a node runs to review its outputs (model reply, tool results, or a decision like HELPFULNESS:Y/END) and optionally override the next edge or terminate/continue.
+
+I altered the response using the After interrupt in the helpfulness node.
 
 
 
