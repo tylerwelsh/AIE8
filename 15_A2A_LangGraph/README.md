@@ -88,6 +88,12 @@ Do this by creating a Simple Agent that can make API calls to the 🤖Agent Node
 What are the core components of an `AgentCard`?
 
 ##### ✅ Answer:
+The documentation actually answers it quite well:
+> The AgentCard is a self-describing manifest for an agent. It provides essential
+    metadata including the agent's identity, capabilities, skills, supported
+    communication methods, and security requirements.
+
+In our case, it has a name, description (of its assistance), url (endpoint to interact), version, default input  and output modes (MIME types), capabilities, and skills.
 
 <br />
 
