@@ -89,11 +89,9 @@ What are the core components of an `AgentCard`?
 
 ##### ✅ Answer:
 The documentation actually answers it quite well:
-> The AgentCard is a self-describing manifest for an agent. It provides essential
-    metadata including the agent's identity, capabilities, skills, supported
-    communication methods, and security requirements.
+> The AgentCard is a self-describing manifest for an agent. It provides essential metadata including the agent's identity, capabilities, skills, supported communication methods, and security requirements.
 
-In our case, it has a name, description (of its assistance), url (endpoint to interact), version, default input  and output modes (MIME types), capabilities, and skills.
+In our case, it has a name, description (of its assistance), url (endpoint to interact), version, default input and output modes (MIME types), capabilities, and skills.
 
 <br />
 
@@ -102,6 +100,8 @@ In our case, it has a name, description (of its assistance), url (endpoint to in
 Why is A2A (and other such protocols) important in your own words?
 
 ##### ✅ Answer:
+From a software perspective, I enjoy the portabiliy of AZA protocals, being able to swap agents/models without changing client logic. Testing wise, it is easy to mock deterministicly. We can treat agents like microservices with retires, timeouts, and the normal software pipeline iterations, etc.
+
 
 <br /><br />
 
