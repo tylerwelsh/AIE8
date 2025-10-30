@@ -1,0 +1,18 @@
+- I learned how to build a minimal LangGraph client that calls a server-side agent through the A2A protocol.  
+- I learned that an `AgentCard` defines an agent’s contract (name, description, URL, capabilities, and skills) for clients to discover and use.  
+- I learned how to extract user-friendly text from A2A responses and support multi-turn interaction cleanly.
+
+- Huamn in the loop
+- I have not implemented authenticated/extended AgentCard flows or access controls between agents.
+- I have not added robust streaming, retries, or telemetry (metrics/tracing) for production-grade reliability.
+
+
+
+🚀 A2A Session Complete!
+Just wrapped up building an A2A (Agent-to-Agent) server and a simple LangGraph client that talks to it!
+
+What I built:
+✅ A2A-enabled agent server with AgentCard (web search, arXiv, RAG)  
+✅ Helpfulness evaluation loop (server-side)  
+✅ Minimal LangGraph client with a single node calling the server via A2A  
+✅ Interactive CLI to ask multiple questions and pretty-printed answers
